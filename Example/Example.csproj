@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{81592AB4-534B-429E-A394-F7042CAB77E1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Example</RootNamespace>
+    <AssemblyName>Example</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassFile\BasicSettingData.cs" />
+    <Compile Include="ClassFile\CBase.cs" />
+    <Compile Include="ClassFile\CCar.cs" />
+    <Compile Include="ClassFile\CCycle.cs" />
+    <Compile Include="ClassFile\cData.cs" />
+    <Compile Include="ClassFile\COneCycle.cs" />
+    <Compile Include="ClassFile\CPlayer.cs" />
+    <Compile Include="ClassFile\CXmlControl.cs" />
+    <Compile Include="ClassFile\ListUtil.cs" />
+    <Compile Include="DataType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataType.Designer.cs">
+      <DependentUpon>DataType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassFile\Enum.cs" />
+    <Compile Include="EnumClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnumClass.Designer.cs">
+      <DependentUpon>EnumClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassFile\ExtendedSettingData.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inheritance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inheritance.Designer.cs">
+      <DependentUpon>Inheritance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassFile\tInterface.cs" />
+    <Compile Include="ListClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListClass.Designer.cs">
+      <DependentUpon>ListClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Method.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Method.Designer.cs">
+      <DependentUpon>Method.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassFile\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Simple Clicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Simple Clicker.Designer.cs">
+      <DependentUpon>Simple Clicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StructerClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StructerClass.Designer.cs">
+      <DependentUpon>StructerClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassFile\TimerUtil.cs" />
+    <Compile Include="XmlReader_Write.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XmlReader_Write.Designer.cs">
+      <DependentUpon>XmlReader_Write.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StreamReader_Write.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StreamReader_Write.Designer.cs">
+      <DependentUpon>StreamReader_Write.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Study_string.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Study_string.Designer.cs">
+      <DependentUpon>Study_string.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sturct_Class.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sturct_Class.Designer.cs">
+      <DependentUpon>Sturct_Class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_endUserLbl_Check.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_endUserLbl_Check.Designer.cs">
+      <DependentUpon>UC_endUserLbl_Check.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DataType.resx">
+      <DependentUpon>DataType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnumClass.resx">
+      <DependentUpon>EnumClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inheritance.resx">
+      <DependentUpon>Inheritance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListClass.resx">
+      <DependentUpon>ListClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Method.resx">
+      <DependentUpon>Method.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Simple Clicker.resx">
+      <DependentUpon>Simple Clicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StructerClass.resx">
+      <DependentUpon>StructerClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlReader_Write.resx">
+      <DependentUpon>XmlReader_Write.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StreamReader_Write.resx">
+      <DependentUpon>StreamReader_Write.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Study_string.resx">
+      <DependentUpon>Study_string.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sturct_Class.resx">
+      <DependentUpon>Sturct_Class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_endUserLbl_Check.resx">
+      <DependentUpon>UC_endUserLbl_Check.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
