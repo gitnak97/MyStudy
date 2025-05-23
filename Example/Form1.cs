@@ -31,6 +31,8 @@ namespace Example
                 { button10, typeof(Simple_Clicker) },
                 { button11, typeof(StructerClass) },
                 { button12, typeof(ListClass) },
+                //수정 됐나?
+
             };
 
             foreach (var pair in _formMap)
