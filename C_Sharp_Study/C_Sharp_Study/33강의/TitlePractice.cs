@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace C_Sharp_Study
+namespace C_Sharp_Study._33강의
 {
     public partial class TitlePractice : Form
     {

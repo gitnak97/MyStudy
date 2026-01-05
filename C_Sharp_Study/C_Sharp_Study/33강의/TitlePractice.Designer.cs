@@ -1,5 +1,5 @@
 ﻿
-namespace C_Sharp_Study
+namespace C_Sharp_Study._33강의
 {
     partial class TitlePractice
     {
