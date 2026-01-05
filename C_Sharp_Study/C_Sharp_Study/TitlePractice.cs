@@ -4,25 +4,25 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace C_Sharp_Study
 {
-    public partial class Form1 : Form
+    public partial class TitlePractice : Form
     {
-        public Form1()
+        public TitlePractice()
         {
             InitializeComponent();
-            this.IsMdiContainer = true;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void TitlePractice_Load(object sender, EventArgs e)
         {
-            var titlePractice = new TitlePractice();
-            titlePractice.MdiParent = this;
-            titlePractice.Show();
+            Version oVesrion = Assembly.GetEntryAssembly().GetName().Version;
+
+            this.Text = oVesrion.ToString();
         }
     }
 }
