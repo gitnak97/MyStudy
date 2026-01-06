@@ -39,7 +39,7 @@ namespace C_Sharp_Study._32강의
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lboxResult = new System.Windows.Forms.ListBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -142,25 +142,26 @@ namespace C_Sharp_Study._32강의
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // lboxResult
             // 
-            this.label4.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label4.Location = new System.Drawing.Point(48, 280);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(694, 150);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "label4";
+            this.lboxResult.FormattingEnabled = true;
+            this.lboxResult.ItemHeight = 12;
+            this.lboxResult.Location = new System.Drawing.Point(48, 283);
+            this.lboxResult.Name = "lboxResult";
+            this.lboxResult.Size = new System.Drawing.Size(695, 148);
+            this.lboxResult.TabIndex = 2;
             // 
             // StackDictionary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lboxResult);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.ControlSizeButton);
             this.Name = "StackDictionary";
             this.Text = "StackDictionary";
+            this.Load += new System.EventHandler(this.StackDictionary_Load);
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -178,6 +179,6 @@ namespace C_Sharp_Study._32강의
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ListBox lboxResult;
     }
 }

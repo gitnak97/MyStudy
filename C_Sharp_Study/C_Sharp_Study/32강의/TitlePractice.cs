@@ -23,6 +23,7 @@ namespace C_Sharp_Study._32강의
             Version oVesrion = Assembly.GetEntryAssembly().GetName().Version;
 
             this.Text = oVesrion.ToString();
+
         }
     }
 }

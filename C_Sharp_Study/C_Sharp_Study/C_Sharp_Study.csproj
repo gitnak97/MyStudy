@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="32강의\CSize.cs" />
+    <Compile Include="33강의\DynamicLayout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="33강의\DynamicLayout.Designer.cs">
+      <DependentUpon>DynamicLayout.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,8 +104,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="33강의\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
